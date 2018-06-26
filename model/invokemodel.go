@@ -14,3 +14,14 @@ type LoginDataResponse struct {
 	Token    string `json:"token"`
 	OrgExist bool  `json:"org_exist"`
 }
+
+type InvokeResponse struct {
+	Code int `json:"code"`
+	Data TxData `json:"data"`
+}
+
+type TxData struct {
+	TxId string `json:"tx_id"`
+	Payload string `json:"payload"`
+}
+
